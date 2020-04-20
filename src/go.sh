@@ -1,6 +1,8 @@
-#/bin/sh
+#!/usr/bin/env sh
 # Easy Compile Script 
 # (c) Tim Zaman, Pixelprisma 2014
+
+set -e
 
 execname="rti"
 
@@ -82,7 +84,7 @@ do
 
 		"package") 
 			echo -e "\033[33;33m|| Packaging Program..\x1B[0m"
-			cd ../../package/
+			cd ../package/
 			./package.pl
 			cd ../src/
 		;;
